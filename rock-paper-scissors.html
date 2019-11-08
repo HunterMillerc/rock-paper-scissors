@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="rock-paper-scissors.css">
+        <TItle>Rock Paper Scissors</TItle>
+    </head>
+    <body>
+        <div class='wrapper'>
+            
+            <header>
+                <div class='selectedChoice' id='player'>
+                    <span id='playerChoice'>Player Choice</span>
+                    <div id='playerChoiceIcon' class='choiceIcon iconPaper iconScissors iconRock'></div>
+                    <span id='playerSelection'></span>
+                </div>
+                <div class='title'>
+                    <span id='mainTitle'>Rock Paper Scissors</span>
+                    <p id='bestOutOfText'>(Best 3 out of 5)</p>
+                </div>
+                <div class ='selectedChoice' id='computer'>
+                    <span id='computerChoice'>Computer Choice</span>
+                    <div id='computerChoiceIcon' class='choiceIcon iconPaper iconScissors iconRock'></div>
+                    <span id='computerSelection'></span>
+                </div>
+            </header>
+            
+            <main>
+                <div class='choices' id='paper'></div>
+                <div class='playerScoreContainer'>
+                    <span class='playerScoreHeading'>Player Score:</span>
+                    <p id='playerScore'></p>
+                </div>
+                <div class='choices' id='scissors'></div>
+                <div class='computerScoreContainer'>
+                    <span class='computerScoreHeading'>Computer Score:</span>
+                    <p id='computerScore'></p>
+                </div>
+                <div class='choices' id='rock'></div>
+            </main>
+            
+            <div class='bottom'>
+                <div class='addOneContainer' id='playerAddOne'>
+                    <p class='addOneText' id='playerAddOneText'></p>
+                </div>
+                <div class='playAgain' id='yesPlayAgain'></div>
+                <div id='bottomText'></div>
+                <div class='playAgain' id='noPlayAgain'></div>
+                <div class='addOneContainer' id='computerAddOne'>
+                    <p class='addOneText' id='computerAddOneText'></p>
+                </div>
+            </div>
+            
+            <footer>
+                <span id ='paperIconCredit' class='credit'>Paper icon made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> 
+                from <a href="https://www.flaticon.com/"title="Flaticon">www.flaticon.com</a>
+                </span>
+                <span id='scissorsIconCredit' class='credit'>Scissors icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from 
+                <a href="https://www.flaticon.com/"title="Flaticon">www.flaticon.com</a>
+                </span>
+                <span id ='rockIconCredit' class='credit'>Rock icon made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from 
+                <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                </span>
+            </footer>
+
+        </div>
+        <script src="rock-paper-scissors.js"></script>
+    </body>
+</html>

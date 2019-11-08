@@ -1,0 +1,377 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------------------------  CSS FOR WEBPAGE STARTS HERE -------------------------------------------*/
+
+html {
+    background: url(backgroundImage/game-background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.wrapper {
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 16vw;
+    justify-content: space-between;
+    position: relative;
+}
+
+#mainTitle {
+    color: white;
+    font-size: 4.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1em;
+}
+
+#bestOutOfText {
+    font-size: 1.5vw;
+    color: white;
+    padding-left: 19.3vw;
+    padding-top: 1vw;
+}
+
+.selectedChoice {
+    height: 16vw;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#playerChoice {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2vw;
+    margin-right: 8vw;
+}
+
+#computerChoice {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2vw;
+    margin-left: 6vw;
+}
+
+.choiceIcon {
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+    border: 0.3em solid rgb(0, 255, 13);
+}
+
+.iconPaper {
+    background: url('icons/paper.png');
+    background-size: 105%;
+}
+
+.iconScissors {
+    background: url('icons/scissors.png');
+    background-size: 105%;
+}
+
+.iconRock {
+    background: url('icons/rock.png');
+    background-size: 105%;
+}
+
+#playerChoiceIcon {
+    margin-right: 9vw;
+    margin-top: 1em;
+}
+
+#computerChoiceIcon {
+    margin-left: 8vw;
+    margin-top: 1em;
+}
+
+#playerSelection {
+    color: white;
+    padding-top: 1em;
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 9vw;
+}
+
+#computerSelection {
+    color: white;
+    padding-top: 1em;
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8.5vw;
+}
+
+main {
+    position: relative;
+    display: flex;
+    height: 20.5vw;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.choices {
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+    background-size: 105%;
+    border: 0.5em solid rgb(0, 0, 0);
+}
+
+.choices:hover {
+    border: 0.5em solid yellow;
+    transition-duration: 0.7s;
+}
+
+.choices:active {
+    transform: scale(1.1);
+}
+
+#paper {
+    background: url(icons/paper.png);
+    background-size: 105%;
+    margin-bottom: 2rem;
+    margin-right: 4rem;
+}
+
+.playerScoreContainer {
+    height: 15vw;
+    width: 17vw;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.playerScoreHeading {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2vw;
+}
+
+#playerScore {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 3vw;
+    padding-top: 4vw;
+}
+
+#scissors {
+    background: url(icons/scissors.png);
+    background-size: 105%;
+    margin-bottom: 2rem;
+}
+
+.computerScoreContainer {
+    height: 15vw;
+    width: 17vw;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.computerScoreHeading {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2vw;
+    margin-left: 1.5rem;
+}
+
+#computerScore {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 3vw;
+    padding-top: 4vw;
+}
+
+#rock {
+    background: url(icons/rock.png);
+    background-size: 105%;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+}
+
+.bottom {
+    position: fixed;
+    width: 100%;
+    height: 10vw;
+    bottom: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addOneContainer {
+    height: 7vw;
+    width: 7vw;
+    text-align: center;
+    vertical-align: middle;
+    line-height:7vw;
+}
+
+.addOneText {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: inline-block;
+    font-size: 2vw;
+    transition: 1.4s;
+}
+
+.scale {
+    transform: scale(2.0);
+}
+
+.wait {
+    cursor: wait;
+    pointer-events: none;
+}
+
+#playerAddOne {
+    margin-left: 2vw;
+}
+
+.playAgain {
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+    border: 0.6em solid rgb(0, 0, 0);
+}
+
+#yesPlayAgain {
+    background:url(icons/yes.png);
+    background-size: 99%;
+}
+
+#yesPlayAgain:hover {
+    border: 0.6em solid rgb(0, 255, 13);
+    transition-duration: 0.7s;
+}
+
+#yesPlayAgain:active {
+    transform: scale(1.1);
+}
+
+#bottomText {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2vw;
+    padding-top: 5vw;
+    margin-left: 1.5em;
+}
+
+#noPlayAgain {
+    background:url(icons/no.png);
+    background-size: 100%;
+}
+
+#noPlayAgain:hover {
+    border: 0.6em solid rgb(255, 1, 1);
+    transition-duration: 0.7s;
+}
+
+#noPlayAgain:active {
+    transform: scale(1.1);
+}
+
+#computerAddOne {
+    margin-right: 2vw;
+}
+
+footer {
+    min-width: 100%;
+    width: 100%;
+	height: 1.5vw;
+	bottom: 0;
+	position: fixed;
+	display: flex;
+    background-color: #808080;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.credit {
+    font-size: 1em;
+}
+
+#rockIconCredit {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding-right: .2em;
+    vertical-align: center;
+}
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#paperIconCredit {
+    color: rgb(0, 0, 0);
+    position: flex center;
+    vertical-align: center;
+    padding-left: .2em;
+}
+
+#scissorsIconCredit {
+    color: rgb(0, 0, 0);
+    right: 0;
+    position: flex;
+    vertical-align: center;
+}
