@@ -25,9 +25,9 @@ var computerScore = 0;
 
 //Loops through rock, paper, scissor icons to make mouse pointer into 'pointer'
 //Does same thing for playAgainSelections at end of game when playAgainSelections shown
-var playerChoiceMouseOvers = document.querySelectorAll('.choices');
 
-[...playerChoiceMouseOvers].forEach(function(playerChoiceMouseOvers)
+
+[...playerChoices].forEach(function(playerChoiceMouseOvers)
 {
     playerChoiceMouseOvers.addEventListener('mouseover', function()
     {
